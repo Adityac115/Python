@@ -113,8 +113,11 @@ print(r1,r2)
 def func(*x,**y):
     print(*x,**y)
     
-func(1,2,3,4,5,'one'= 0,'two'=1)
-
+try:
+    func(1,2,3,4,5,one=0,two=1)
+except Exception as e:
+    print('some error , plz ignore')
+    
 x=[1,2,3,4,5,6,7,8,9,10]
 
 mp=filter(lambda i:  i%2==0, x)
