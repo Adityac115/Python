@@ -26,6 +26,12 @@ a="Aditya kushwaha"
 
 '''.2f and .3f let the {} know the data is float and we want only 2 and 3 decimal points as result '''
 
-price=9.545
-taxed_price=9.5*1.0954
-print("The originial price is ${:.2f} and taxed_price is ${:.3f}".format(price,taxed_price))
+# price=9.545
+# taxed_price=9.5*1.0954
+# print("The originial price is ${:.2f} and taxed_price is ${:.3f}".format(price,taxed_price))
+
+import datetime
+
+today = datetime.datetime(2017, 1, 27)
+
+print(f"Today's date is {today:%B %d, %Y}")
